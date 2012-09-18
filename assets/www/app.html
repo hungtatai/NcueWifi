@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.1.0.css" />
+        <link rel="stylesheet" href="css/my.css" />
+
+		<script type="text/javascript" charset="utf-8" src="js/cordova-1.7.0.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.blockUI.js"></script>
+        <script src="js/jquery.storage.min.js"></script>
+        <script src="js/jquery.mobile-1.1.0.min.js"></script>
+        <script src="js/ToastPlugin.js"></script>
+        <script src="js/WifiInfoPlugin.js"></script>
+		<script>
+			
+			
+		</script>
+		<script src="js/script.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="index">
+            <div data-theme="c" data-role="header">
+                <h3>
+                    Ncue Wifi
+                </h3>
+				<a href="#about" data-icon="info" data-transition="pop" class="ui-btn-right">About</a>
+            </div>
+            <div data-role="content">
+                <h2>
+                    登入資訊
+                </h2>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="account">
+                            請輸入登入帳號:
+                        </label>
+                        <input id="account" placeholder="登入帳號即為學號" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="password">
+                            請輸入登入密碼:
+                        </label>
+                        <input id="password" placeholder="預設密碼為身份證前8碼" value="" type="password" />
+                    </fieldset>
+                </div>
+				<div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            一般設定:
+                        </legend>
+                        <input name="persistent" id="persistent" type="checkbox" />
+                        <label for="persistent">
+                            紀錄帳密
+                        </label>
+						<!--
+                        <input name="autologin" id="autologin" type="checkbox" />
+                        <label for="autologin">
+                            自動登入
+                        </label>
+						-->
+                    </fieldset>
+                </div>
+				<div class="ui-grid-a">
+                    <div class="ui-block-a">
+						<input type="submit" value="登入" id="loginbtn" />
+                    </div>
+                    <div class="ui-block-b">
+						<input type="submit" value="登出" id="logoutbtn" />
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div data-role="page" id="about" >
+            <div data-theme="c" data-role="header">
+                <h3>
+                    Ncue Wifi
+                </h3>
+
+            </div>
+            <div data-role="content">
+                <h2>
+                    關於此程式
+                </h2>
+				<h4>
+                    這個小程式可以幫你簡便的登入彰化師大的校內無線網路，而且沒有煩人的廣告哦XD<br />
+					<a href="https://github.com/HondaDai/NcueWifi">Source Code</a>也歡迎自由取用！<br />
+					<img src="img/^^.png" style="width:50%; position:absolute; right:0px;" />				
+                </h4>
+			</div>
+		</div>
+
+    </body>
+</html>
